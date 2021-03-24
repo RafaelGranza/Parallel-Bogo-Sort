@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 #include "src/seq_bogo.cpp"
+#include "src/openmp_bogo.cpp"
+
 using namespace std;
 
 int main(int argc, char const *argv[])
