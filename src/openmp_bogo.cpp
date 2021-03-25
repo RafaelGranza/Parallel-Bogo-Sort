@@ -10,6 +10,9 @@ void next(vector<int>& vec){
 }
 
 vector<int> seq_bogo(vector<int> vec){
+
+    // Talvez criar várias cópias e rodar cada uma em thread
+    
     while(not is_ordered(vec)){
         next(vec);
     }
