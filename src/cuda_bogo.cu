@@ -1,17 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool is_ordered(vector<int>& vec){
+bool cuda_is_ordered(vector<int>& vec){
     return is_sorted(vec.begin(), vec.end());
 }
 
-void next(vector<int>& vec){
+void cuda_next(vector<int>& vec){
     random_shuffle(vec.begin(), vec.end());
 }
 
-vector<int> seq_bogo(vector<int> vec){
-    while(not is_ordered(vec)){
-        next(vec);
+vector<int> cuda_bogo(vector<int> vec){
+    while(not cuda_is_ordered(vec)){
+        cuda_next(vec);
     }
     return vec;
 }
