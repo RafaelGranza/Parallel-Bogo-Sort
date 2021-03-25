@@ -13,7 +13,8 @@ void omp_next(vector<int>& vec){
 vector<int> omp_bogo(vector<int> vec){
 
     // Talvez criar várias cópias e rodar em diferentes threads
-    while(not is_ordered(vec)){
+    #pragma omp parallel
+    while(not omp_is_ordered(vec)){
         omp_next(vec);
     }
     return vec;

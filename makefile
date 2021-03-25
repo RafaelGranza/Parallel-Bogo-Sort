@@ -1,10 +1,11 @@
 all: tudo
 
 tudo:
-	-g++ -c src/seq_bogo.cpp
+	-g++ -c src/seq_bogo.cpp 
+	-g++ -c src/omp_bogo.cpp -fopenmp
 	-mkdir -p .compiled
 	-mv *.o .compiled/
-	-g++ main.cpp -o main
+	-g++ -o main -fopenmp main.cpp
 
 .PHONY: clean
 
