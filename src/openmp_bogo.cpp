@@ -11,8 +11,7 @@ void next(vector<int>& vec){
 
 vector<int> seq_bogo(vector<int> vec){
 
-    // Talvez criar várias cópias e rodar cada uma em thread
-    
+    // Talvez criar várias cópias e rodar em diferentes threads
     while(not is_ordered(vec)){
         next(vec);
     }
