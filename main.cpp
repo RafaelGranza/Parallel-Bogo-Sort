@@ -6,9 +6,9 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    // vector<int> vec = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0}; //Esse demora ~ 1m 20s
-    // vector<int> vec = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0}; //Esse demora ~ 1,5s
-    vector<int> vec = {5, 4, 3, 2, 1, 0}; // Instanteneo
+    // vector<int> vec = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0}; // Seq: ~ 1m 20s
+    // vector<int> vec = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0}; // Seq: ~ 1,5s
+    vector<int> vec = {5, 4, 3, 2, 1, 0}; // Seq: 0
     vec = seq_bogo(vec);
 
     for(auto i: vec) cout << i << " ";
