@@ -14,9 +14,8 @@ int main(int argc, char const *argv[])
     // vec = omp_bogo(vec); // Falta programar CERTO
     // vec = cuda_bogo(vec);  // Nem comecei ainda
 
-
     for(auto i: vec) cout << i << " ";
     cout << endl;
-    
+
     return 0;
 }
