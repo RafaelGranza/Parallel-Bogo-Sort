@@ -1,19 +1,21 @@
 #include <bits/stdc++.h>
+#include <omp.h>
 using namespace std;
 
-bool is_ordered(vector<int>& vec){
+bool omp_is_ordered(vector<int>& vec){
     return is_sorted(vec.begin(), vec.end());
 }
 
-void next(vector<int>& vec){
+void omp_next(vector<int>& vec){
     random_shuffle(vec.begin(), vec.end());
 }
 
-vector<int> seq_bogo(vector<int> vec){
+vector<int> omp_bogo(vector<int> vec){
 
     // Talvez criar várias cópias e rodar em diferentes threads
+    
     while(not is_ordered(vec)){
-        next(vec);
+        omp_next(vec);
     }
     return vec;
 }
