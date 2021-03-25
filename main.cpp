@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #include "src/seq_bogo.cpp"
-#include "src/openmp_bogo.cpp"
+#include "src/omp_bogo.cpp"
 
 using namespace std;
 
