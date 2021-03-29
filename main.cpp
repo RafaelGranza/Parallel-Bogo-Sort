@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
     
     vec = seq_bogo(vec); // PRONTO
     // vec = omp_bogo(vec, 4); // PRONTO    
-    // vec = ompi_bogo(vec);  // Nem comecei ainda
+    // vec = mpi_bogo(vec);  // TEM QUE FAZER
 
     for(auto i: vec) cout << i << " ";
     cout << endl;
