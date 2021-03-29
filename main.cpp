@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 #include "src/seq_bogo.cpp"
 #include "src/omp_bogo.cpp"
+#include "src/ompi_bogo.cpp"
 
 using namespace std;
 
@@ -13,8 +14,8 @@ int main(int argc, char const *argv[])
     // vector<int> vec = {5, 4, 3, 2, 1, 0}; // Seq: 0,01s | OMP: 0,1s
     
     vec = seq_bogo(vec); // PRONTO
-    // vec = omp_bogo(vec, 4); // PRONTO
-    // vec = cuda_bogo(vec);  // Nem comecei ainda
+    // vec = omp_bogo(vec, 4); // PRONTO    
+    // vec = ompi_bogo(vec);  // Nem comecei ainda
 
     for(auto i: vec) cout << i << " ";
     cout << endl;

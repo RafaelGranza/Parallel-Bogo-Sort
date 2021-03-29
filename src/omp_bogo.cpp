@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 #include "tools.cpp"
 #include <omp.h>
+
 using namespace std;
 
 vector<int> omp_bogo(vector<int>& vec, int size = 2){

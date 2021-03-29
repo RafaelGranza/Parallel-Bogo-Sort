@@ -2,7 +2,7 @@
 Bogo Sort implemented in:
 * Sequencial
 * OpenMP
-* Cuda
+* OpenMPI
 
 
 ### To run:
