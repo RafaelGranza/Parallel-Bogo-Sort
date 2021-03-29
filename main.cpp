@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #include "src/seq_bogo.cpp"
 #include "src/omp_bogo.cpp"
-#include "src/ompi_bogo.cpp"
+#include "src/mpi_bogo.cpp"
 
 using namespace std;
 

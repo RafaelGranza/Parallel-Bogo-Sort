@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 #include "tools.cpp"
-// #include <mpi.h>
+#include <mpi.h>
+
+
 
 using namespace std;
 
