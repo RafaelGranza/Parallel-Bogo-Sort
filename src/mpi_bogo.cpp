@@ -20,7 +20,7 @@ vector<int> mpi_bogo(vector<int> vec){
             next(vec, engine);
             ++count;
             if(count == 200){
-                for (int i = 0; i < size && not tag; ++i)
+                for (int i = 0; i < size && not flag; ++i)
                     MPI_Iprobe(i,tag, MPI_COMM_WORLD, &flag, MPI_STATUS_IGNORE);
                 count = 0;
             }
@@ -28,11 +28,6 @@ vector<int> mpi_bogo(vector<int> vec){
 
         for (int i = 0; i < size; ++i)
             MPI_Send(msg,1,MPI_CHAR,i,tag, MPI_COMM_WORLD);
-
-        if(is_ordered(vec)){
-            for(auto i: vec) cout << i << " ";
-            cout << endl;
-        }
     
     MPI_Finalize();
 
