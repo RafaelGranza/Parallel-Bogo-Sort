@@ -14,5 +14,10 @@ $ ./main
 ### To run (OpenMPI):
 ```bash
 $ make
-$ mpirun -np 2./main
+$ mpirun -np 4./main
+```
+
+### To test time (Sequencial or OpenMP):
+```bash
+$ ./test_time size rep op
 ```

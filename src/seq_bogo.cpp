@@ -3,8 +3,8 @@
 
 using namespace std;
 
-vector<int> seq_bogo(vector<int> vec){
-    mt19937 engine(time(0));
+vector<int> seq_bogo(vector<int> vec, int s = 0){
+    mt19937 engine(time(0) + s);
     while(not is_ordered(vec)){
         next(vec, engine);
     }

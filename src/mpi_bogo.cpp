@@ -4,17 +4,19 @@
 
 using namespace std;
 
-vector<int> mpi_bogo(vector<int> vec){
+vector<int> mpi_bogo(vector<int> vec, int s = 0){
 
     int rank, size, tag =0, flag = 0, count = 0;
     char msg[1];
     MPI_Request status;
-    mt19937 engine(time(0));
-
-    MPI_Init(NULL, NULL);
+    
+    
     
         MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 	    MPI_Comm_size(MPI_COMM_WORLD, &size); 
+
+        // mt19937 engine(rank* (rank+1)); // sementes rápidas!!!
+        mt19937 engine(time(0)* (rank+1) + s); // sementes Aleatórias!!!
 
         while(not is_ordered(vec) && not flag){
             next(vec, engine);
@@ -29,7 +31,7 @@ vector<int> mpi_bogo(vector<int> vec){
         for (int i = 0; i < size; ++i)
             MPI_Send(msg,1,MPI_CHAR,i,tag, MPI_COMM_WORLD);
     
-    MPI_Finalize();
+    
 
 
     return vec;

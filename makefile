@@ -7,6 +7,7 @@ tudo:
 	-mkdir -p .compiled
 	-mv *.o .compiled/
 	-mpic++ -o main -fopenmp main.cpp
+	-mpic++ -o test_time -fopenmp test_time.cpp
 
 .PHONY: clean
 

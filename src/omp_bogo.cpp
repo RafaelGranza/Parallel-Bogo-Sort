@@ -4,7 +4,7 @@
 
 using namespace std;
 
-vector<int> omp_bogo(vector<int>& vec, int size = 2){
+vector<int> omp_bogo(vector<int>& vec, int size = 2, int s = 0){
 
     vector<vector<int>> vecs(size, vec);
     vector<mt19937> engine(size);
@@ -12,7 +12,8 @@ vector<int> omp_bogo(vector<int>& vec, int size = 2){
      
     #pragma omp parallel for shared(vecs, engine)
     for(int i = 0; i < size; i++){
-        engine[i] = mt19937(omp_get_thread_num()*(i+1));
+        // engine[i] = mt19937(omp_get_thread_num()*(i+1)); // sementes rápidas!!!
+        engine[i] = mt19937((omp_get_thread_num()+1)*time(0)+s); // sementes Aleatórias!!!
         next(vecs[i], engine[i]);
     }
     
