@@ -13,5 +13,7 @@ tudo:
 
 clean:
 	-rm -f -r .compiled
+	-rm -f main
+	-rm -f test_time
 
 
