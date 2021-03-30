@@ -5,8 +5,14 @@ Bogo Sort implemented in:
 * OpenMPI
 
 
-### To run:
+### To run (Sequencial or OpenMP):
 ```bash
 $ make
 $ ./main
+```
+
+### To run (OpenMPI):
+```bash
+$ make
+$ mpirun -np 2./main
 ```

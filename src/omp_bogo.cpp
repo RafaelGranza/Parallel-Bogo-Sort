@@ -29,5 +29,6 @@ vector<int> omp_bogo(vector<int>& vec, int size = 2){
             return vecs[i];
         }
     }
+    
     return vec;
 }
