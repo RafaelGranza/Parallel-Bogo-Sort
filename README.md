@@ -4,20 +4,30 @@ Bogo Sort implemented in:
 * OpenMP
 * OpenMPI
 
+## Sequencial and OpenMP
 
-### To run (Sequencial or OpenMP):
+### To run:
 ```bash
 $ make
 $ ./main
 ```
 
-### To run (OpenMPI):
+### To test time:
+```bash
+$ make
+$ ./test_time size rep op
+```
+
+## OpenMPI
+
+### To run:
 ```bash
 $ make
 $ mpirun -np 4./main
 ```
 
-### To test time (Sequencial or OpenMP):
+### To test time:
 ```bash
-$ ./test_time size rep op
+$ make
+$ mpirun -np 4./test_time size rep op
 ```

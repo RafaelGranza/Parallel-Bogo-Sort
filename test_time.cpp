@@ -48,7 +48,7 @@ int main(int argc, char const *argv[])
         cout << time/(i+1) << endl;
     }
     MPI_Finalize();
-    cout << time/rep << endl;
+    cout << "AVG Time: " << time/rep  << (ms)<< endl;
 
     return 0;   
 }
