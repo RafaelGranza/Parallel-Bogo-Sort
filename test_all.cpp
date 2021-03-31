@@ -42,7 +42,7 @@ int main(int argc, char const *argv[])
         
             auto start = high_resolution_clock::now();
             
-            vec = omp_bogo(vec, 4, i);
+            vec = omp_bogo(vec, 12, i);
 
             auto stop = high_resolution_clock::now();
             auto duration = duration_cast<milliseconds>(stop - start);
