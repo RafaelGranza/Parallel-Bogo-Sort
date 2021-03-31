@@ -11,7 +11,7 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
     int max_size = 11;
-    int it = 50;
+    int it = 100;
 
     double time = 0;
     for(int size = 1; size <= max_size; size++){
