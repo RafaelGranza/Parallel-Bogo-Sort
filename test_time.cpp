@@ -13,8 +13,8 @@ int main(int argc, char const *argv[])
 
 
     int size = atoi(argv[1]);
-    int rep = atoi(argv[2]);
-    int op = atoi(argv[3]);
+    int rep  = atoi(argv[2]);
+    int op   = atoi(argv[3]);
     
 
     if(size + rep + op > 100000) return 0;
@@ -24,8 +24,8 @@ int main(int argc, char const *argv[])
     for(int i = 0; i<rep; ++i ){
 
         vector<int> vec;
-        for(int i = size-1; i>=0; --i )
-            vec.push_back(i); 
+        for(int j = size-1; j>=0; --j )
+            vec.push_back(j); 
     
         auto start = high_resolution_clock::now();
         switch (op){
@@ -45,7 +45,7 @@ int main(int argc, char const *argv[])
         auto stop = high_resolution_clock::now();
         auto duration = duration_cast<milliseconds>(stop - start);
         time += duration.count();
-        cout << time/(i+1) << endl;
+        // cout << time/(i+1) << endl;
     }
     MPI_Finalize();
     cout << "AVG Time: " << time/rep  << "(ms)"<< endl;
