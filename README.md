@@ -38,3 +38,6 @@ $ mpirun -np 4./main
 $ make
 $ mpirun -np 4./test_time size rep op
 ```
+
+
+![Comparison](https://imgur.com/a/5tm4sPG)
