@@ -23,13 +23,13 @@ $ ./test_time size rep op
 ### To run:
 ```bash
 $ make
-$ mpirun -np 4./main
+$ mpirun -np 4 ./main
 ```
 
 ### To test time:
 ```bash
 $ make
-$ mpirun -np 4./test_time size rep op
+$ mpirun -np 4 ./test_time size rep op
 ```
 
 # Time Comparison:
