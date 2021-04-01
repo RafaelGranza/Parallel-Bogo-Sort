@@ -8,7 +8,6 @@ tudo:
 	-mv *.o .compiled/
 	-mpic++ -o main -fopenmp main.cpp
 	-mpic++ -o test_time -fopenmp test_time.cpp
-	-mpic++ -o test_all -fopenmp test_all.cpp
 
 
 .PHONY: clean
@@ -17,5 +16,4 @@ clean:
 	-rm -f -r .compiled
 	-rm -f main
 	-rm -f test_time
-	-rm -f test_all
 
