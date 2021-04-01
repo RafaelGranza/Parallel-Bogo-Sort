@@ -33,4 +33,5 @@ $ mpirun -np 4./test_time size rep op
 ```
 
 
-![Comparison](https://imgur.com/a/5tm4sPG)
+![Comparison](https://i.imgur.com/zptWoSt.png)
+![Comparison Log](https://i.imgur.com/RzZmcYL.png)
