@@ -18,13 +18,6 @@ $ make
 $ ./test_time size rep op
 ```
 
-
-### Só pro Menderson:
-```bash
-$ make
-$ ./test_all > out
-```
-
 ## OpenMPI
 
 ### To run:
