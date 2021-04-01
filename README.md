@@ -32,6 +32,7 @@ $ make
 $ mpirun -np 4./test_time size rep op
 ```
 
+# Time Comparison:
 
 ![Comparison](https://i.imgur.com/zptWoSt.png)
 ![Comparison Log](https://i.imgur.com/RzZmcYL.png)
