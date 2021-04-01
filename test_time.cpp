@@ -45,7 +45,7 @@ int main(int argc, char const *argv[])
         auto stop = high_resolution_clock::now();
         auto duration = duration_cast<milliseconds>(stop - start);
         time += duration.count();
-        // cout << time/(i+1) << endl;
+        cout << time/(i+1) << endl;
     }
     MPI_Finalize();
     cout << "AVG Time: " << time/rep  << "(ms)"<< endl;

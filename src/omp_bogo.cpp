@@ -12,8 +12,8 @@ vector<int> omp_bogo(vector<int>& vec, int size = 2, int s = 0){
      
     #pragma omp parallel for shared(vecs, engine)
     for(int i = 0; i < size; i++){
-        // engine[i] = mt19937(omp_get_thread_num()*(i+1)); // sementes rápidas!!!
-        engine[i] = mt19937((omp_get_thread_num()+1)*time(0)+s); // sementes Aleatórias!!!
+        // engine[i] = mt19937(omp_get_thread_num()*(i+1));  // Fast Seed
+        engine[i] = mt19937((omp_get_thread_num()+1)*time(0)+s);  // Random Seed
         next(vecs[i], engine[i]);
     }
     
