@@ -4,6 +4,11 @@ Bogo Sort implemented in:
 * OpenMP
 * OpenMPI
 
+## Prerequisites:
+* g++
+* OpenMP
+* OpenMPI
+
 ## Sequencial and OpenMP
 
 ### To run:
