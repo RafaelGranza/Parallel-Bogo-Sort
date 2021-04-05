@@ -4,7 +4,7 @@ Bogo Sort implemented in:
 * OpenMP
 * OpenMPI
 
-## Prerequisites:
+### Prerequisites:
 * g++
 * OpenMP
 * OpenMPI
