@@ -11,11 +11,11 @@ int main(int argc, char const *argv[])
     
     // vec = seq_bogo(vec); 
     
-    // vec = omp_bogo(vec, 4);
+    vec = omp_bogo(vec, 4);
     
-    MPI_Init(NULL, NULL);
-    vec = mpi_bogo(vec);
-    MPI_Finalize();
+    // MPI_Init(NULL, NULL);
+    // vec = mpi_bogo(vec);
+    // MPI_Finalize();
 
     if(is_ordered(vec)){
         for(auto i: vec) cout << i << " ";
